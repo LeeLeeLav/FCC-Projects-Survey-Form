@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1 id="title">Your forever home, today</h1>
+    <p id="description"><i>Take a few minutes to help us improve our services to you.</i></p>
+
+    <form id="survey-form">
+        <div class="form-control">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name here" required>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address here" required>
+        </div>
+        
+        <div class="form-control">
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" id="number" placeholder="Enter your age here" required min="16" max="120">
+        </div>
+
+       
+        <div class="form-control">
+            <label for="city">Choose a city:</label>
+            <select name="city" id="dropdown">
+                <option value="paris">Paris</option>
+                <option value="bordeaux">Bordeaux</option>
+                <option value="marseille">Marseille</option>
+                <option value="nice">Nice</option>
+            </select>
+        </div> 
+        
+        <div class="form-control">
+            <label>Type of property:</label>
+            <label for="property-type1"><input type="radio" id="property-type1" value= "Apartment" name="property-type"> Apartment</label>
+            <label for="property-type2"><input type="radio" id="property-type2" value= "House" name="property-type"> House</label>
+            <label for="property-type3"><input type="radio" id="property-type3" value= "Business" name="property-type"> Business for Sale</label>
+        </div>
+
+           
+        <div class="form-control-budget">
+            <label>What is your budget? <small><i>(Calculated in Euros)</i></small></label>
+            <label for="min-budget"><input type="number" id="min-budget" name="budget" min="0" placeholder="Minimum"></label>
+            <label for="max-budget"><input type="number" id="max-budget" name="budget" min="1" placeholder="Maximum"></label>
+        </div> 
+
+        <div class="form-control">
+            <label>Further criteria <small>(Click all that apply)</small></label>
+            <label for="criteria1"><input type="checkbox" name="criteria" value= "garden" id="criteria1"/> Garden</label>
+            <label for="criteria2"><input type="checkbox" name="criteria" value= "garage" id="criteria2"/> Garage</label>
+            <label for="criteria3"><input type="checkbox" name="criteria" value= "swimming Pool" id="criteria3"/> Swimming Pool</label>
+            <label for="criteria4"><input type="checkbox" name="criteria" value= "elevator" id="criteria4"/> Elevator</label>
+            <label for="criteria5"><input type="checkbox" name="criteria" value= "parking" id="criteria5"/> Parking</label>
+            <label for="criteria6"><input type="checkbox" name="criteria" value= "fireplace" id="criteria6"/> Fireplace</label>
+            <label for="criteria7"><input type="checkbox" name="criteria" value= "cellar" id="criteria7"/> Cellar</label>
+            <label for="criteria8"><input type="checkbox" name="criteria" value= "parking" id="criteria8"/> Parking</label>
+            <label for="criteria9"><input type="checkbox" name="criteria" value= "veranda" id="criteria9"/> Veranda</label>
+            <label for="criteria10"><input type="checkbox" name="criteria" value= "terrace" id="criteria10"/> Terrace </label>
+            <label for="criteria11"><input type="checkbox" name="criteria" value= "balcony" id="criteria11"/> Balcony</label>
+            <label for="criteria12"><input type="checkbox" name="criteria" value= "wheelchair" id="criteria12"/> Wheelchair accessible</label>
+        </div>
+
+        <div class="form-control">    
+            <label for="comments">Do you have any additional criteria or questions?</label>
+            <textarea name="comments" id="comments" placeholder="Let us know here..."></textarea> 
+        </div>  
+        
+        <button type="Submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
